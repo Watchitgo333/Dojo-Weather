@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-l">
+            DojoWeather
+        </div>
+        <div class="nav-r">
+            <ul>
+                <li onclick="alert('Loading weather report...')">Burbank</li>
+                <li onclick="alert('Loading weather report...')">Chicago</li>
+                <li onclick="alert('Loading weather report...')">Dallas</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="header">
+        <p id="active-city">
+            Natchitoches, LA
+        </p>
+        <form>
+            <p>show tempurature in</p>
+            <select onchange="cF()" id="c-f">
+                <option>°C</option>
+                <option>°F</option>
+            </select>
+        </form>
+    </div>
+    <div class="container">
+        <div class="day-blocks">
+            <div class="block">
+                <h2>Today</h2>
+                <img src="./assets/some_sun.png" alt="Sunny">
+                <h3>some sun</h3>
+                <div class="temps">
+                    <p><span class="high">21</span>°</p>
+                    <p class="blue"><span class="low">4</span>°</p>
+                </div>
+            </div>
+            <div class="block">
+                <h2>Tomorrow</h2>
+                <img src="./assets/some_clouds.png" alt="Cloudy">
+                <h3>some clouds</h3>
+                <div class="temps">
+                    <p><span class="high">24</span>°</p>
+                    <p class="blue"><span class="low">7</span>°</p>
+                </div>
+            </div>
+            <div class="block">
+                <h2>Friday</h2>
+                <img src="./assets/some_rain.png" alt="Rain">
+                <h3>some rain</h3>
+                <div class="temps">
+                    <p><span class="high">26</span>°</p>
+                    <p class="blue"><span class="low">14</span>°</p>
+                </div>
+            </div>
+            <div class="block">
+                <h2>Saturday</h2>
+                <img src="./assets/some_clouds.png" alt="Cloudy">
+                <h3>some clouds</h3>
+                <div class="temps">
+                    <p><span class="high">27</span>°</p>
+                    <p class="blue"><span class="low">17</span>°</p>
+                </div>
+            </div>
+        </div>
+        <div id="cookies">
+            <img src="./assets/cookie.png" alt="Cookie">
+                <div class="message">
+                    <h4>Stop! Cookie Time</h4>
+                    <p>We use cookies (sadly not the edible ones) to persronalize
+                        content and ads, to provide social media features and analyze our traffic.
+                        <a href="#">Read more...</a>
+                    </p>
+                </div>
+                <button onclick="removeBox()">I Accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
